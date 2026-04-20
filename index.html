@@ -11,9 +11,10 @@
 <header>
   <h1>PHILLIP THOMPSON</h1>
   <nav>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
+    <a href="#skills">Programming Languages</a>
     <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
   </nav>
 </header>
 
@@ -31,7 +32,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="./images/profile.png" alt="Phillip Thompson" />
+      <img src="images/profile.png" alt="Phillip Thompson" />
     </div>
   </div>
 </section>
@@ -39,88 +40,106 @@
 <section id="skills" class="reveal">
   <h3>Programming Languages</h3>
   <div class="skills">
-    <div class="skill">JavaScript/Typescript
+    <div class="skill-wrapper">
+      <div class="skill">Javascript/Typescript</div>
+      <span class="tooltip">Used for frontend development, interactivity, DOM manipulation, and frameworks like React.</span>
+    </div>
+    <div class="skill-wrapper">
+      <div class="skill">F#</div>
+      <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    </div>
+    <div class="skill-wrapper">
+      <div class="skill">C#</div>
+      <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    </div>
+    <div class="skill-wrapper">
+      <div class="skill">VB.NET</div>
+      <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    </div>
+    <div class="skill-wrapper">
+        <div class="skill">HTML</div>
         <span class="tooltip">Used for frontend development, interactivity, DOM manipulation, and frameworks like React.</span>
     </div>
-    <div class="skill">F#
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    <div class="skill-wrapper">
+      <div class="skill">CSS</div>
+      <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
     </div>
-      <div class="skill">C#
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    <div class="skill-wrapper">
+      <div class="skill">Knockout.js</div>
+      <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
     </div>
-    <div class="skill">VB.NET
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-  </div>
-  <h3>Frontend</h3>
-  <div class="skills">
-    <div class="skill">HTML
-        <span class="tooltip">Used for frontend development, interactivity, DOM manipulation, and frameworks like React.</span>
-    </div>
-    <div class="skill">CSS
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-      <div class="skill">Knockout.js
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-    <div class="skill">React
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    <div class="skill-wrapper">
+      <div class="skill">React</div>
+      <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
     </div>
   </div>
-  <h3>Backend & Data</h3>
-  <div class="skills">
-    <div class="skill">.NET
-        <span class="tooltip">Used for frontend development, interactivity, DOM manipulation, and frameworks like React.</span>
+</section>
+
+<section id="projects" class="reveal">
+  <h3>Projects</h3>
+  <h4 class="subheading">Javascript/Typescript</h4>
+  <h4 class="subheading">F#</h4>
+  <div class="projects">
+    <div class="project-card">
+      <h4>Concurrent Web Crawler</h4>
+      <p>Build a crawler that fetches and parses websites concurrently.</p>
+      <a href="#" target="_blank">View on GitHub</a>
     </div>
-    <div class="skill">SQL Server
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    <div class="project-card">
+      <h4>MailboxProcessor Chat Server</h4>
+      <p>Implement a multi-user chat system using F# actors.</p>
+      <a href="#" target="_blank">View on GitHub</a>
     </div>
-      <div class="skill">EventStore
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    <div class="project-card">
+      <h4>Functional Data Processing Engine</h4>
+      <p>A pipeline system for logs/CSV/JSON data.</p>
+      <a href="#" target="_blank">View on GitHub</a>
     </div>
-    <div class="skill">Microservices (event-driven)
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
+    <div class="project-card">
+      <h4>Real-Time Event Stream Processor</h4>
+      <p>A system that consumes live events and reacts in real time.</p>
+      <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h4>REST API Backend</h4>
+      <p>Build a production-style web API.</p>
+      <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h4>Type-Safe Domain Model</h4>
+      <p>Model a real domain like banking, e-commerce, or logistics.</p>
+      <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h4>Mini Distributed Actor System</h4>
+      <p>Build a simplified distributed system simulation.</p>
+      <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h4>Functional Compiler / Interpreter</h4>
+      <p>Build a small language (calculator → scripting language).</p>
+      <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h4>Financial Monte Carlo Simulator</h4>
+      <p>Simulate pricing, risk, or probabilistic systems.</p>
+      <a href="#" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h4>Full Event-Sourced System</h4>
+      <p>Build a system where all state is derived from events.</p>
+      <a href="#" target="_blank">View on GitHub</a>
     </div>
   </div>
-  <h3>Software/Tools</h3>
-  <div class="skills">
-    <div class="skill">Visual Studio
-        <span class="tooltip">Used for frontend development, interactivity, DOM manipulation, and frameworks like React.</span>
-    </div>
-    <div class="skill">Eclipse
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-      <div class="skill">Unity 3D
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-    <div class="skill">3D Studio Max
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-      <div class="skill">Unreal Engine
-        <span class="tooltip">Functional-first language used for backend services and event-driven systems.</span>
-    </div>
-  </div>
-  <h3>Operating Systems</h3>
-  <div class="skills">
-    <div class="skill">Windows</div>
-    <div class="skill">Linux / UNIX</div>
-    <div class="skill">Android</div>
-  </div>
-  <h3>Additional Exposure</h3>
-  <div class="skills">
-    <div class="skill">CUDA</div>
-    <div class="skill">MPI</div>
-    <div class="skill">GPGPU</div>
-    <div class="skill">Three.js</div>
-  </div>  
+  <h4 class="subheading">VB.Net</h4>
 </section>
 
 <section id="experience" class="reveal">
-  <h3>Work Experience</h3>
+  <h3>Commercial Experience</h3>
 
   <div class="experience-item">
-    <h4>Senior Software Developer</h4>
-    <span>Company Name • 2020 - Present</span>
+    <h4>Senior Developer</h4>
+    <span>Wavenet • 2020 - Present</span>
     <p>Developed and enhanced the TeamsLink platform, delivering scalable telephony solutions integrated with Microsoft Teams. Built and maintained the TeamsLink Portal using HTML, CSS, Knockout.js, and TypeScript, and contributed to TeamsLink Pro using  React to enable external voice calling within Teams. Implemented advanced telephony features including IVR, call queuing,  routing, and CRM integratiaon. Worked with SQL databases and developed event-driven microservices in F#, with system  monitoring via EventStore. </p>
   </div>
 
@@ -137,24 +156,12 @@
   </div>
 </section>
 
-<section id="projects" class="reveal">
-  <h3>Projects</h3>
-  <div class="projects">
-    <div class="project-card">
-      <h4>Project One</h4>
-      <p>Short description of your project and tech used.</p>
-      <a href="#" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h4>Project Two</h4>
-      <p>Short description of your project and tech used.</p>
-      <a href="#" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h4>Project Three</h4>
-      <p>Short description of your project and tech used.</p>
-      <a href="#" target="_blank">View on GitHub</a>
-    </div>
+<section id="education" class="reveal">
+  <h3>Education</h3>
+  <div class="education-item">
+    <h4>Computer Science (Games Development) – First Class with Honours</h4>
+    <span>Sept 2012 — Sept 2016</span>
+    <p>Achieved consistently high marks across all modules, including First-Class results in key subjects. </p>
   </div>
 </section>
 
