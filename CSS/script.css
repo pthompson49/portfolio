@@ -54,7 +54,7 @@ nav a:hover::after {
 }
 .hero h2 {
     font-size:5rem;
-    margin-top:50px;
+    margin-top:2px;
     margin-bottom:10px;
     animation:fadeUp 1s ease
 }
@@ -67,8 +67,8 @@ nav a:hover::after {
 .hero p {
     font-size:1.3rem;
     color:#94a3b8;
-    margin-top:20px;
-    animation:fadeUp 2.5s ease
+    margin-bottom:5px;
+    animation:fadeUp 3.5s ease
 }
 
 h3 {
@@ -117,12 +117,29 @@ h3 {
   background: linear-gradient(to right, rgba(15,23,42,0.3), transparent);
 }
 
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.hero-tagline span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: letterFade 0.6s ease forwards;
+  /* animation-delay: calc(var(--delay, 0s) + 0.5s); */
+}
+
+@keyframes letterFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    text-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow: 0 0 8px rgba(56,189,248,0.8);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 3px rgba(56,189,248,0.3);
+  }
 }
 
 @media (max-width: 768px) {
@@ -138,19 +155,19 @@ h3 {
 }
 
 .intro-text {
-  margin-top: 30px;
+  margin-top: 20px;
   color: #94a3b8;
-  font-size: 20px;
+  font-size: 1.2rem;
   padding-right: 30px;
   padding-top: 10px;
+  animation:fadeUp 1s ease
 }
 
 section {
     padding:60px 20px;
-    /* max-width:1000px; */
     max-width: 80%;
-    /* margin:auto */
     margin:auto;
+    overflow: visible;
 }
 
 .skills {
@@ -158,10 +175,13 @@ section {
     grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
     gap:15px;
     z-index: 10;
+    overflow: visible;
+    position: relative;
 }
 .skill-wrapper {
   position: relative;
   display: inline-block;
+  z-index: 100;
 }
 .skill-wrapper:hover .tooltip {
   opacity: 1;
@@ -208,7 +228,7 @@ section {
   border: 1px solid #38bdf8;
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 
-  z-index: 99999;
+  z-index: 999999;
 }
 .skill:hover .tooltip {
   opacity: 1;
@@ -239,7 +259,7 @@ section {
 .projects {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px
+    gap:20px;
 }
 .project-card {
     background:#020617;
@@ -294,4 +314,11 @@ footer {
 .reveal.active {
     opacity:1;
     transform:translateY(0)
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 3.8s ease-in-out;
 }
