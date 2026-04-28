@@ -160,7 +160,7 @@ h3 {
   font-size: 1.2rem;
   padding-right: 30px;
   padding-top: 10px;
-  animation:fadeUp 1s ease
+  animation:fadeUp 1s ease;
 }
 
 section {
@@ -322,3 +322,80 @@ footer {
   object-fit: cover;
   transition: opacity 3.8s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh; 
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+
+  .hero h6 {
+    font-size: 1.3rem;
+  }
+
+  .hero-tagline {
+    margin-bottom: 10px;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+    .hero-image img {
+      width: 100%;
+      max-width: none;
+      border-radius: 0;
+    }
+    .skill {
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .skill:active {
+      transform: scale(0.97);
+    }
+
+    .projects {
+      position: relative;
+      z-index: 1;
+    }
+
+    .project-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    .tooltip {
+      position: fixed;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-10%);
+
+      z-index: 999999; /* keep high */
+
+      pointer-events: none; /* prevents weird hover conflicts */
+    }
+}
+
